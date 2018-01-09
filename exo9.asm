@@ -19,7 +19,7 @@ lign db 10,13,'$'          ; new lign code      *
 
 ten db 10                  ; the value of 10    *
 
-Nloops db 2                ; number of loops and the number of the numbers to insert and compaire
+Nloops db 5                ; number of loops and the number of the numbers to insert and compaire
 
 ;/************************/
 
