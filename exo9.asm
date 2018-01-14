@@ -83,18 +83,14 @@ phrase proc far
             mov ah,0
             div ten
 
-            mov max,ah              ; saving the result 
-            mov [max+1],al
+            mov max,al              ; saving the result 
+            mov [max+1],ah
 
             add max,48              ; transforming the number in to ASCII form
             add [max+1],48
-
-            mov dl,[max+1]          ; printing the max
-            mov ah,2
-            int 21h 
-
-            mov dl,max              ; printing the max
-            mov ah,2
+        
+            mov dl,offset max              ; printing the max
+            mov ah,9
             int 21h  
 
             theEND:                 ; the end of the program (no real need for this lign)
